@@ -72,6 +72,13 @@ body 中的内容一般为整个 html 文档的正文，html的标签由六个�
 ### Python爬虫所需库
 
 - requests:数据爬取，发送请求
+  - requests.get():不需要登录
+  - requests.post()：发送表单数据，一般用于模拟登录
+  - 参数
+    - url:请求地址
+    - headers:请求头，用于伪装浏览器
+    - params/data:参数或者表单数据
+    - proxy:用于IP代理
 - BeautifulSoup：数据解析，定位标签
 - lxml：通过xpath路径解析
 - re：正则表达式，作用万能，但书写较繁琐
